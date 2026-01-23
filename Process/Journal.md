@@ -17,7 +17,7 @@ To make sure the player was only going to be able to walk in a straight line, I 
 
 My game goes as:
 
-You walk to the right of the room, get asked a question on which room you want to go to next. You first choose between rooms Star and Oval, then between Round and Field, then between Cats and Dogs. If you go through the right ones (example: Star then Field then Dogs), you win. If not, you lose and can restart. You need to remember which rooms you chose.
+You walk to the right end of the room, get asked a question on which room you want to go to next. You first choose between rooms Star and Oval, then between Round and Field, then between Cats and Dogs. If you go through the right ones (example: Star then Field then Dogs), you win. If not, you lose and can restart. You need to remember which rooms you chose.
 
 
 
@@ -38,6 +38,6 @@ Comments on things that didn’t work::
 At first I wanted each room (7 of them) to look different, that's why I created 7 different scenes. But since I didn’t end up having the time to change the way they looked, I could have only had one room and changed the dialogue that asks which room to go to and still keep track of the global variable.
 Instead I lost efficiency by creating all these different scenes.
 
-When it comes to the triggers at the left and right of my room, I couldn't find a way to make it so the movement stops when the player is on the trigger and it doesn’t look like the player is walking into the wall.
+When it comes to the triggers at the left and right of the room, I couldn't find a way to make it so the movement stops when the player is on the trigger and it doesn’t look like the player is walking into the wall.
 
 Also I didn’t know how to change the key that had to be pressed to select so it is still Z, which i wanted to change.
