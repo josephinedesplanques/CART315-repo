@@ -6,8 +6,7 @@ https://project-arkno.itch.io/kayas-character-sprite
 
 It was my first time using GB Studio. When I started looking at it, I realized the most time consuming part of making a game was going to be creating the scenes and the art for the background. 
 Therefore I chose to make a labyrinth game where the player can only move from left to right.
-I looked up sprites on itchi.io and chose this one
-https://project-arkno.itch.io/kayas-character-sprite
+
 
 Since I wanted the player to only move from left to right, I made a labyrinth of identical rooms made of one narrow hallway. 
 
