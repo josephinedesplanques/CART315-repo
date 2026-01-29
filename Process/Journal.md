@@ -1,3 +1,40 @@
+
+# Exploration Prototype 1 - 29.01.26
+
+Idea:
+
+Since we explored in class the Unity components movement, colliders and instantiation, I wanted to create a prototype to play with those functionalities and see what I could use as code that I have read in the textbook.
+
+I wanted to try to create a prototype where the player controls a cube and every time that cube touches a wall the wall randomly changes colors.
+
+First I started by creating the walls of the room and giving them all a boxcollider so that the player can touch them and it can trigger an action.
+
+I then created the 2d object square that was going to be my player. I added a BoxCollider2d as well as a Rigidbody2d with a gravity of 0 since I don’t want it to fall and I want to move it in the box freely, in all directions.
+
+I took inspiration from the script for GottaCatchaMall to create the script for my player box. It took me a few tries to understand how to make my player move depending on the arrow input.
+Since in GottaCatchaMall the basket only moves from left to right and I wanted my box to move left right up and down, I had to create a variable box_x and box_y.
+
+My script at first wasn’t working, so I had to go and manually set the input manager to old like we had to do in class.
+
+Now the speed felt too fast so I manually changed it to 0.01f, it was too slow now so I settled on 0.08.
+
+
+Ok so at this point I was also lost because my square was walking though the walls even though they all had a box collider. And then I realized I forgot to add a RigidBody2d to my walls. So I did and set their body type as static. But I was still encountering this issue. So I manually changed the limits of the movement from the GottaCatchaMall script to make it look like my square couldn’t leave the box, even if it was manually and not through RigidBody
+
+
+Then I realized I didn’t know how to execute my idea that if the box touches a wall that wall changes color given the fact that I was having trouble accessing my player’s Rigidbody. 
+
+
+So I decided to follow along the 2d Essentials video tutorials from Unity Essentials to see if I could experiment with it and find an answer to my problem.
+
+In the Pathway Unity Essentials, I looked at the programming essentials mission to look at the script from their example.
+
+
+
+
+
+
+
 # Make-a-Thing, design reflection 22.01
 
 I got the character sprite from itch.io, creator is Arkno:
