@@ -25,7 +25,7 @@ Then I realized I didn’t know how to execute my idea that if the box touches a
 So I decided to follow along the 2d Essentials video tutorials from Unity Essentials to see if I could experiment with it and find an answer to my problem.
 
 In the Pathway Unity Essentials, I looked at the programming essentials mission and took a look at the script from their example. In the mission the goal is to control a robot vacuum that can move and rotate in a room. 
-In the robot vacuum tutorial they had 
+In the robot vacuum tutorial they had
 private Rigidbody rb; // Reference to player's Rigidbody.
 And 
 rb = GetComponent<Rigidbody>(); // Access player's Rigidbody.
