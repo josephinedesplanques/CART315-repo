@@ -3,31 +3,56 @@
 
 Idea:
 
-Since we explored in class the Unity components movement, colliders and instantiation, I wanted to create a prototype to play with those functionalities and see what I could use as code that I have read in the textbook.
+Since we explored in class the Unity components movement, colliders and instantiation, I wanted to create a prototype to play with those functionalities and see what code I could use that was in the textbook or in the GottaCatchaMall or in the Unity Essentials projects.
 
-I wanted to try to create a prototype where the player controls a cube and every time that cube touches a wall the wall randomly changes colors.
+I wanted to try to create a prototype where the player controls a cube and every time that cube touches a wall that wall randomly changes colors.
 
-First I started by creating the walls of the room and giving them all a boxcollider so that the player can touch them and it can trigger an action.
+First I started by creating the walls of the room and giving them all a boxcollider so that the player could enter in contact with them.
 
 I then created the 2d object square that was going to be my player. I added a BoxCollider2d as well as a Rigidbody2d with a gravity of 0 since I don’t want it to fall and I want to move it in the box freely, in all directions.
+
 
 I took inspiration from the script for GottaCatchaMall to create the script for my player box. It took me a few tries to understand how to make my player move depending on the arrow input.
 Since in GottaCatchaMall the basket only moves from left to right and I wanted my box to move left right up and down, I had to create a variable box_x and box_y.
 
 My script at first wasn’t working, so I had to go and manually set the input manager to old like we had to do in class.
 
-Now the speed felt too fast so I manually changed it to 0.01f, it was too slow now so I settled on 0.08.
 
-
-Ok so at this point I was also lost because my square was walking though the walls even though they all had a box collider. And then I realized I forgot to add a RigidBody2d to my walls. So I did and set their body type as static. But I was still encountering this issue. So I manually changed the limits of the movement from the GottaCatchaMall script to make it look like my square couldn’t leave the box, even if it was manually and not through RigidBody
-
+Ok so at this point I was also lost because my square was walking though the walls even though they all had a box collider. And then I realized I forgot to add a RigidBody2d to my walls. I met that change and set their body type as static. But I was still encountering the same issue. So I manually changed the limits of the movement from the GottaCatchaMall script to make it look like my square couldn’t leave the box, even if it was manually and not through RigidBody collision.
 
 Then I realized I didn’t know how to execute my idea that if the box touches a wall that wall changes color given the fact that I was having trouble accessing my player’s Rigidbody. 
 
-
 So I decided to follow along the 2d Essentials video tutorials from Unity Essentials to see if I could experiment with it and find an answer to my problem.
 
-In the Pathway Unity Essentials, I looked at the programming essentials mission to look at the script from their example.
+In the Pathway Unity Essentials, I looked at the programming essentials mission and took a look at the script from their example. In the mission the goal is to control a robot vacuum that can move and rotate in a room. 
+In the robot vacuum tutorial they had 
+private Rigidbody rb; // Reference to player's Rigidbody.
+And 
+rb = GetComponent<Rigidbody>(); // Access player's Rigidbody.
+to access the object’s Rigidbody which seemed like a good start to fix my problem.
+
+But I decided to turn my focus to using the rest of the tutorial to implement a collectible in my prototype. I created a script and wanted to add it to my collectible object but then I kept getting a “Can't add script” error message that I couldn’t fix.
+
+So, once again, I decided to pivot and change direction. I couldn’t figure out how to implement rigidbody, I didn’t know how I was going to go about changing the color of walls on impact and I didn’t understand why my new script wouldn’t attach itself to a new object. I wanted to end on a victory :) so I simply wanted to add a random cube falling.
+
+I looked at the script from GottaCatchaMall BuildingDropperScript and took inspiration from it.
+I used this line of code:
+
+GameObject currentBuilding = Instantiate(building, buildingPos, transform.rotation);
+
+Renaming it, and using a if (Input.GetKeyDown(randomKey)); function, I managde to make it so that when I press the spacebar, an object falls.
+
+I assigned this object a Rigidbody and box collider and funny enough, it does get blocked by the walls and can be moved by the player square. I’m sure the answer to why my player square can move past the walls is right in front of me.
+
+So now I have a prototype where the player controls a square, and that square can push around a small yellow ball within a rectangular room.
+
+Definitely a lot of trial with errors, I’m still confused on how the rigidbody works.
+
+Next steps:
+- fixing the rigidbody issue on the walls
+- making more balls fall down
+- making the walls change colors when they are interacted with, maybe do the same with the balls?
+
 
 
 
