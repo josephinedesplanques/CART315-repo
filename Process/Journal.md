@@ -4,7 +4,7 @@ Reflection on last week:
 
 Last week I was too ambitious, this week I want to focus on testing ideas that only need me to manipulate the pre existing code we have for Pawng.
 
-Pong is a classic game with a very simple mechanic, which allows for a lot of possibilities for changes, and for things to add.
+Pong is a classic game with a very simple mechanic, leaving room for changes.
 
 First, I wanted to test how the game feel would be impacted if every time the ball touched a paddle, it went a little faster.
 
@@ -22,7 +22,7 @@ At first I added 2 lines in the BallScript script:
    
 *`}`*
 
-I thought ballSpeed was in charge of how fast the ball was going but realised that changing ballSpeed allowed didn't lead to any change. I realised that the velocity was what needed to be changed for the speed to change.
+I thought ballSpeed was in charge of how fast the ball was going but realised that changing ballSpeed  didn't lead to any change. I realised that the velocity was what needed to be changed for the speed to change.
 
 So I replaced what I added with:
 
@@ -36,7 +36,7 @@ So I replaced what I added with:
    
 *`}`*
 
-1.5f was too high, the game was getting way too crazy too fast, so after some changes I settled with ***`*1.1f`*** so that the game still became more challenging quickly, but it didn’t feel too overwhelming straight away.
+1.5f was too high, the game was getting way too crazy too fast, so after some changes I settled with ***`*1.1f`*** so that the game still became challenging quickly, but it didn’t feel too overwhelming straight away.
 
 I then wondered how it would affect the player if the blip sound had a higher pitch every time it hit a wall.
 
@@ -58,7 +58,7 @@ In Reset() I also had to add:
 
 ***`blip.pitch = 1;`***
 
-to make sure that the pitch would reset when the ball gets out of frame.
+to make sure that the pitch would reset when the game restarts.
 
 This change in pitch, in addition to the acceleration of the ball, adds a stress level to the game, making the player more tense and playing with a sense of urgency.
 
