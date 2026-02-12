@@ -1,3 +1,95 @@
+# Exploration Prototype 2 - 05.02.26
+
+Reflection on last week:
+
+Last week I was too ambitious, this week I want to focus on testing ideas that only need me to manipulate the pre existing code we have for Pawng.
+
+Pong is a classic game with a very simple mechanic, leaving room for changes.
+
+First, I wanted to test how the game feel would be impacted if every time the ball touched a paddle, it went a little faster.
+
+At first I added 2 lines in the BallScript script:
+
+*`if (wall.gameObject.name == "paddleLeft" || wall.gameObject.name == "paddleRight") {`*
+
+   *`blip.pitch = 1f;`*
+   
+   *`blip.Play();`*
+   
+   ***`ballSpeed += 0.5f;`***
+   
+   ***`rb.linearVelocity = rb.linearVelocity.normalized * ballSpeed;`***
+   
+*`}`*
+
+I thought ballSpeed was in charge of how fast the ball was going but realised that changing ballSpeed  didn't lead to any change. I realised that the velocity was what needed to be changed for the speed to change.
+
+So I replaced what I added with:
+
+*`if (wall.gameObject.name == "paddleLeft" || wall.gameObject.name == "paddleRight") {`*
+
+   *`blip.pitch = 1f;`*
+   
+   *`blip.Play();`*
+
+   ***`rb.linearVelocity *= 1.5f;`***
+   
+*`}`*
+
+1.5f was too high, the game was getting way too crazy too fast, so after some changes I settled with ***`*1.1f`*** so that the game still became challenging quickly, but it didn’t feel too overwhelming straight away.
+
+I then wondered how it would affect the player if the blip sound had a higher pitch every time it hit a wall.
+
+So I changed the script under:
+
+*`if (wall.gameObject.name == "topWall" || wall.gameObject.name == "bottomWall")`*
+
+and:
+
+*`if (wall.gameObject.name == "paddleLeft" || wall.gameObject.name == "paddleRight")`*
+
+to:
+
+***`blip.pitch += 0.05f;`***
+
+***`blip.Play();`***
+
+In Reset() I also had to add: 
+
+***`blip.pitch = 1;`***
+
+to make sure that the pitch would reset when the game restarts.
+
+This change in pitch, in addition to the acceleration of the ball, adds a stress level to the game, making the player more tense and playing with a sense of urgency.
+
+Now I wanted to make the game a little more unpredictable and wanted to test how it would feel if every time the ball touched a wall, it turned into a different shape.
+
+I added the square and triangle sprites to my sprites folder in my assets and created an array **ShapeArray** of 3 that had the ball sprite assigned to 0, the square sprite assigned to 1 and the triangle sprite assigned to 2.
+
+I then added in these two lines to my script under
+*`if (wall.gameObject.name == "topWall" || wall.gameObject.name == "bottomWall") {`* :
+
+***`int randomNumber = Random.Range(0, 3);`***
+
+***`GetComponent<SpriteRenderer>().sprite = ShapeArray[randomNumber];`***
+
+
+
+And here I have it! The shape of the ball now changes when it touches a wall, on top of the speed increasing when it touches a paddle and the pitch becoming higher when a wall or a paddle is touched.
+
+![Image proto2](Media/Proto2.png)
+
+These were not super complicated add ons but they helped me understand better how to manipulate a script using velocity, arrays, sprites etc. I also got to see how even the smallest changes can affect a game's feel.
+
+It also helped me see how I could improve my Exploration Prototype 2 if I wanted to.
+
+Next steps:
+
+to make the game even more interesting, in the future I could:
+- add color changes (the ball could change colors, the walls could change colors...)
+- make it so the speed of the ball after it hits a paddle is random (could get faster, slower etc) to add even more unknown factors
+- add 2 paddles, make it a 4-player game
+
 
 # Exploration Prototype 1 - 29.01.26
 
