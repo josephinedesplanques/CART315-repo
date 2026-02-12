@@ -6,7 +6,63 @@ This week, it was Breakout. I wanted to test what it would feel like if one of t
 First, I had to make it so that one of the bricks had to randomly be a different color. In order to do so, I made changes in the BrickLayerManager script, created a random Index integer, and a count integer set to 0.
 Within the for loop, if the brick instantiated is the number brick that equals the random index number, that brick will be colored purple. I chose a randomized Index this way every time you play it will be a different block.
 
-![start Image](Media/)
+![start Image](Media/Start1)
+
+
+Now, in addition to having a different color that special block needs to be assigned a boolean that is true, while all the other blocks need to have a boolean that is false.
+
+I created the boolean Special, set it to false in BrickScript, and within BrickLayerManager I added:
+```csharp
+if (count == Index){
+
+   BrickX.GetComponent<SpriteRenderer>().color = Color.purple;
+   
+   BrickScript Nx = BrickX.GetComponent<BrickScript>();
+   
+   Nx.Special = true;
+}
+```
+Now it is time to make it so that my special brick is worth more points and spawns more balls.
+I realized that the points attributed were already high, and random between 10 and 20. So I want my special brick to give 35 points.
+So in the if loop that checks if we hit a brick in the BreakoutBall script, I added:
+```csharp
+BrickScript isBrick = other.gameObject.GetComponent<BrickScript>();
+
+if (isBrick != null && isBrick.Special){
+          GameManager.S.AddPoint(35); }
+```
+And it is within that if loop that I will create the different balls.
+
+I started by creating a prefab of the Ball so that I could duplicate it.
+
+I then added this script to the same loop in order to instantiate three balls when the special brick is destroyed:
+
+```csharp
+if (isBrick != null && isBrick.Special) {
+
+            GameManager.S.AddPoint(35);
+            
+            for (int i = 0; i < 3; i++) {
+            
+            GameObject newBall = Instantiate(prefabBall, transform.position, Quaternion.identity);
+            
+            BreakoutBall rd = newBall.GetComponent<BreakoutBall>();
+            
+            rd.ballSpeed = Random.Range(8f,14f);}
+            
+}
+
+```
+
+Once the special bloc is destroyed, three balls appear at the same starting position where the main ball is when you start the game, and they fall when you press the spacebar or if the ball pushes them, because they have physical components.
+
+![second Image](Media/Start2)
+
+The speed didn’t work like this.
+
+Having a brick worth that many points basically means that the goal becomes to break that one in priority. The other balls appearing seem to add a bit of messiness/fun?? Not sure, will definitely need more iterations.
+
+
 
 
 
