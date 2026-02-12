@@ -1,3 +1,15 @@
+# Exploration Prototype 3 - 12.02.26
+
+For this week’s exploration prototype, I wanted, just like last week, to build on top of the prototype we saw in class. 
+This week, it was Breakout. I wanted to test what it would feel like if one of the bricks was not red but another color, and that that brick was special in the fact that once it gets broken, it gives +5 points to the player and spawns a few more balls on the level. 
+
+First, I had to make it so that one of the bricks had to randomly be a different color. In order to do so, I made changes in the BrickLayerManager script, created a random Index integer, and a count integer set to 0.
+Within the for loop, if the brick instantiated is the number brick that equals the random index number, that brick will be colored purple. I chose a randomized Index this way every time you play it will be a different block.
+
+![start Image](Media/)
+
+
+
 # Exploration Prototype 2 - 05.02.26
 
 Reflection on last week:
