@@ -1,15 +1,15 @@
 # Exploration Prototype 3 - 12.02.26
 
 For this week’s exploration prototype, I wanted, just like last week, to build on top of the prototype we saw in class. 
-This week, it was Breakout. I wanted to test what it would feel like if one of the bricks was not red but another color, and that that brick was special in the fact that once it gets broken, it gives +5 points to the player and spawns a few more balls on the level. 
+This week, it was Breakout. I wanted to test what it would feel like if one of the bricks was not red but another color, and if that brick was special in the fact that once it gets destroyed, it gives +5 points to the player and spawns a few more balls on the level. 
 
 First, I had to make it so that one of the bricks had to randomly be a different color. In order to do so, I made changes in the BrickLayerManager script, created a random Index integer, and a count integer set to 0.
-Within the for loop, if the brick instantiated is the number brick that equals the random index number, that brick will be colored purple. I chose a randomized Index this way every time you play it will be a different block.
+Within the for loop, if the brick instantiated is the number brick that equals the random index number, that brick will be colored purple. I chose a randomized Index this way every time you play, it will be a different block.
 
 ![start Image](Media/Start1)
 
 
-Now, in addition to having a different color that special block needs to be assigned a boolean that is true, while all the other blocks need to have a boolean that is false.
+Now, in addition to having a different color, that special block needs to be assigned a boolean that is true, while all the other blocks need to have a boolean that is false.
 
 I created the boolean Special, set it to false in BrickScript, and within BrickLayerManager I added:
 ```csharp
@@ -23,7 +23,7 @@ if (count == Index){
 }
 ```
 Now it is time to make it so that my special brick is worth more points and spawns more balls.
-I realized that the points attributed were already high, and random between 10 and 20. So I want my special brick to give 35 points.
+I realized that the points attributed were already high, and randomized between 10 and 20. So I want my special brick to give 35 points.
 So in the if loop that checks if we hit a brick in the BreakoutBall script, I added:
 ```csharp
 BrickScript isBrick = other.gameObject.GetComponent<BrickScript>();
@@ -31,11 +31,11 @@ BrickScript isBrick = other.gameObject.GetComponent<BrickScript>();
 if (isBrick != null && isBrick.Special){
           GameManager.S.AddPoint(35); }
 ```
-And it is within that if loop that I will create the different balls.
+And it is within that if loop that I will instantiate the different balls.
 
 I started by creating a prefab of the Ball so that I could duplicate it.
 
-I then added this script to the same loop in order to instantiate three balls when the special brick is destroyed:
+I then added this script to the previous loop in order to instantiate three balls when the special brick is destroyed:
 
 ```csharp
 if (isBrick != null && isBrick.Special) {
@@ -58,12 +58,15 @@ Once the special bloc is destroyed, three balls appear at the same starting posi
 
 ![second Image](Media/Start2)
 
-The speed didn’t work like this.
+The speed didn’t work like if I set it up like this, I need to play with the velocity.
 
-Having a brick worth that many points basically means that the goal becomes to break that one in priority. The other balls appearing seem to add a bit of messiness/fun?? Not sure, will definitely need more iterations.
+Having a brick worth so many points basically means that the goal of the game becomes to break that one in priority. The other balls appearing seem to add a bit of messiness/fun?? Not sure, will definitely need more iterations.
 
-
-
+Next steps:
+- fixing the speed issue
+- making the new balls random colors
+- iterating to see how many new balls add more fun without adding too much messiness
+- experimenting with singletons
 
 
 # Exploration Prototype 2 - 05.02.26
