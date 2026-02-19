@@ -1,3 +1,7 @@
+# Exploration Prototype 4 - 19.02.26
+
+![Gif](Media/giftest.gif)
+
 # Exploration Prototype 3 - 12.02.26
 
 For this week’s exploration prototype, I wanted, just like last week, to build on top of the prototype we saw in class. 
