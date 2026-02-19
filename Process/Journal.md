@@ -1,6 +1,42 @@
 # Exploration Prototype 4 - 19.02.26
 
+My prototype last week added on top of the breakout we made in class. I made it so one block is randomly painted another color, and once this special block is broken, it gives the player a lot of points and multiple new balls appear and allow the player to break the rest of the blocks a lot faster.
+
+Adding new balls gave a sense of messiness that I was not too sure about, so for this week I decided to use what we learned in class with the shmup and make it so that once the special block is destroyed, the paddle starts to be able to shoot balls, changing the main mechanic of the game while the player is playing.
+
+Therefore, I took a look at the schmup and took inspiration from it.
+
+I had to create a new script for the paddle that would get triggered once the ball destroyed the special block and make the paddle able to shoot bullets. 
+
+I used the same script that the shooting script for the schmup but added a boolean set to false
+
+```csharp
+public bool Shoot = false;
+```
+
+To activate this script, the boolean needs to be set to true when the special block is destroyed. It means the script needs to access the script that’s linked to another gameobject. I looked it up and found out about the function ```FindFirstObjectByType```. So I added to my BreakoutBall script, under the special block if loop, 
+
+```csharp
+ShootingPaddle paddleShoot = FindFirstObjectByType<ShootingPaddle>();
+paddleShoot.Shoot = true;
+Destroy(gameObject);
+```
+
+So that the boolean in the ShootingPaddle is set to true and the ball gets destroyed so it doesn’t get in the way of the bullets that are going to be shot.
+
+In the ShootingPaddle script that is now activated, the paddle is shooting a bullet prefab that destroys bricks, doesn’t bounce, and destroys itself when it hits a wall.
+
+After a few tries and modifications, the game runs.
+
+
 ![Gif](Media/giftest.gif)
+
+
+In terms of design itself, I think it is a nice touch that the gameplay changes when playing, moving from breakout to more of a shooting mechanic. Next step would be to have the bricks start moving once it gets in shooter mode, to enhance the feeling of targets.
+
+Looking in the future, when it comes to the implementation itself: I wonder if it could be fun to not warn the player that the mechanism changes. How do we go about adding an element of surprise without “betraying” the player’s trust? Things to ponder on…
+
+
 
 # Exploration Prototype 3 - 12.02.26
 
