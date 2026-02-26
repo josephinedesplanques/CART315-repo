@@ -1,4 +1,4 @@
-# Iteration Prototype 1 - 26.02.26
+# Iterative Prototype 1 - 26.02.26
 
 ## **Ideation Workshop Prototype:**
 
