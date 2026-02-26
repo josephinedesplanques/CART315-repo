@@ -83,7 +83,8 @@ esthetics and cooking gameplay: Good Pizza Great Pizza
 I like these three ideas, but when thinking about constraints: 
 - time to complete the project (7 weeks)
 - time that can be allocated to the project every week 
--  my limited artistic skills 
+-  my limited artistic skills
+ 
 I feel like **Idea 2**: the puzzle game is the one that I should go with.
 It has one strong mechanic that can be iterated and hopefully reach a satisfying feel, and a lot can be experimented with when it comes to the sound design to add stress elements, urgency etc.
 
