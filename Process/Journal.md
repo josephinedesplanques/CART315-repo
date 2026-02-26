@@ -1,3 +1,123 @@
+# Iterative Prototype 1 - 26.02.26
+
+## **Ideation Workshop Prototype:**
+
+## *Idea 1:*
+
+Our two words were **“snowmobile”** and **“angry dog barking”**.
+
+You live in Lapland, Finland and own sled dogs. Your mean neighbour challenges you to a race, snowmobile vs dog sled. You accept but end up losing pretty badly. You make it your mission to train your dogs for the revenge race that is happening a week later.
+
+A 2D racing and strategy game where you have to win races against other dog sledders in order to win money that will allow you to buy resources (water, meat, supplements) that need to be smartly distributed to your dogs in order to improve their statistics. You are in control of the placement of your dogs, and your dogs' stats as well as your skills during the races will determine their outcome. All this training comes to fruition when you race the final boss, the snowmobile, and try to get revenge.
+
+**Main Mechanics:**
+
+- racing on ice tracks, different levels with different difficulty and obstacles
+- resource management: which resources to buy, how to use them best to make your dogs more powerful
+- strategy: all your dogs have different stats. How do you place your dogs in formation in front of the sled: which dog has to be placed in front? Which one should be at the back etc
+
+**Gameplay loops:**
+
+- Macro loop: winning the race against the snowmobile
+- Mid loop: racing against other sleds to get better/win money
+- Micro loop: buy resources and distribute them to your dogs
+
+Design values: nature vs machine, relationship with your sled dogs
+
+Precedents:
+Racing: Mario kart
+
+aesthetics wise, look wise: Celeste
+
+## *Idea 2:*
+The words were **“suburban house”, and “omnipresence”**.
+
+Here you are, being forced to do your homework at your desk again, and you know your dad is going to walk up the stairs and check on you soon. But you would rather do anything other than homework, like for example rearranging your desk.
+
+A puzzle game where you have an example layout of how you are supposed to move the items on your desk around. You have a short amount of time to do that rearrangement, and you hear your dad’s footsteps getting closer and closer as he walks up the stairs. Finish the puzzle in time, pull your laptop out to fool dad, and repeat.
+
+**Main mechanics:**
+
+- moving around the items on your desk to match the layout shown.
+- taking your laptop out of your bag as soon as you’re done to fool dad
+
+**Gameplay loops:**
+
+- Macro loop: completing a few puzzles without getting caught by your dad.
+- Mid loop: match the desk to the example layout
+- Micro loop: drag and drop, rotate objects etc
+
+Design values: performance in stress-induced situations
+
+Precedents:
+Puzzle aspect: A little to the left
+
+Stress feel when hearing the footsteps: Hello Neighbor
+
+
+## *Idea 3:*
+Our words were **“suburban house”** and **“meat”**. 
+
+You move into a new house in the suburbs and find out that the previous tenants owned a restaurant and left entire fridges filled with meat in the basement. You decide to open a carnivore restaurant in your house where you only serve meat based meals. 
+
+A cosy cooking game that alternates between cooking sections and social moments where you need to talk to your neighbors to ask them to teach you meat based recipes to add to your menu.
+
+**Main Mechanics:**
+
+- dialogue with customers to take order and build relation
+- cooking at the cooking station
+- dialogue with neighbors to acquire new recipes
+
+**Gameplay loops:**
+
+- Macro loop: unlock all the meat-based recipes in order to cook all the meat you have and empty your fridges
+- Mid loop: take orders, cook them, visit your neighbors to acquire recipes
+- Micro loop: choose the right ingredients, cut/chop/cook
+
+Design values: relationship building with your community
+
+Precedents:
+esthetics and cooking gameplay: Good Pizza Great Pizza
+
+## Decision on idea to pursue
+I like these three ideas, but when thinking about constraints: 
+- time to complete the project (7 weeks)
+- time that can be allocated to the project every week 
+-  my limited artistic skills 
+I feel like **Idea 2**: the puzzle game is the one that I should go with.
+It has one strong mechanic that can be iterated and hopefully reach a satisfying feel, and a lot can be experimented with when it comes to the sound design to add stress elements, urgency etc.
+
+## First Prototype
+So to get started, I want to test if the act of rearranging items on a desk with the pressure of time feels fun and engaging at all. I didn’t feel like I needed it to be in a game engine to test the core of it, so I decided to do it on Google Slides.
+
+I also wanted to find a footsteps audio that I could play while someone plays to test the “stress” aspect that would be added but I couldn’t find an audio I liked enough.
+
+I used 7 pictures of items that would be on a desk and placed them around
+
+(photo issue-rider not syncing)
+
+With the next slide ready to be played with: 
+
+(photo issue-rider not syncing)
+
+I made 3 “levels”, for the 2nd layout you have to rotate objects around:
+
+(photo issue-rider not syncing)
+
+And I tried to make the 3rd level even harder:
+
+(photo issue-rider not syncing)
+
+For layout 1 and 2 I put 60 seconds to complete it and 40 seconds for the 3rd layout. 
+
+
+Things that need playtesting and iteration:
+- amount of items on desk
+- amount of time you have to rearrange the items
+
+Interested to test in class and get feedback!
+
+
 # Exploration Prototype 4 - 19.02.26
 
 My prototype last week added on top of the breakout we made in class. I made it so one block is randomly another color, and once this special block is destroyed, it gives the player a lot of points and multiple new balls appear and allow the player to break the rest of the blocks a lot faster.
