@@ -8,7 +8,7 @@ Our two words were **“snowmobile”** and **“angry dog barking”**.
 
 You live in Lapland, Finland and own sled dogs. Your mean neighbour challenges you to a race, snowmobile vs dog sled. You accept but end up losing pretty badly. You make it your mission to train your dogs for the revenge race that is happening a week later.
 
-A 2D racing and strategy game where you have to win races against other dog sledders in order to win money that will allow you to buy resources (water, meat, supplements) that need to be smartly distributed to your dogs in order to improve their statistics. You are in control of the placement of your dogs, and your dogs' stats as well as your skills during the races will determine their outcome. All this training comes to fruition when you race the final boss, the snowmobile, and try to get revenge.
+A 2D pixel art racing and strategy game where you have to win races against other dog sledders in order to win money that will allow you to buy resources (water, meat, supplements) that need to be smartly distributed to your dogs in order to improve their statistics. You are in control of the placement of your dogs, and your dogs' stats as well as your skills during the races will determine their outcome. All this training comes to fruition when you race the final boss, the snowmobile, and try to get revenge.
 
 **Main Mechanics:**
 
@@ -83,7 +83,8 @@ esthetics and cooking gameplay: Good Pizza Great Pizza
 I like these three ideas, but when thinking about constraints: 
 - time to complete the project (7 weeks)
 - time that can be allocated to the project every week 
--  my limited artistic skills 
+-  my limited artistic skills
+ 
 I feel like **Idea 2**: the puzzle game is the one that I should go with.
 It has one strong mechanic that can be iterated and hopefully reach a satisfying feel, and a lot can be experimented with when it comes to the sound design to add stress elements, urgency etc.
 
