@@ -1,4 +1,4 @@
-# Iterative Prototype 2 - 26.02.26
+# Iterative Prototype 2 - 12.03.26
 
 During last class, me and Jolene decided to work on the project together.
 
