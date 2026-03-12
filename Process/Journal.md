@@ -186,7 +186,7 @@ This is what it looks like right now:
 ![Correc](Media/IterativeProto2/gifcorrect.gif)
 ![Wrong](Media/IterativeProto2/gifwrong.gif)
 
-For more details on her process, see her journal: link
+For more details on her process, see her journal: [link](https://github.com/jbodika/CART-315/blob/main/Process/Journal.md#implementation)
 
 **Mini game 2: Breakout variation**
 
