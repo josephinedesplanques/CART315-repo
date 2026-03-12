@@ -95,19 +95,19 @@ I also wanted to find a footsteps audio that I could play while someone plays to
 
 I used 7 pictures of items that would be on a desk and placed them around
 
-(photo issue-rider not syncing)
+![Layout1](Media/Iteration1/layout1.png)
 
 With the next slide ready to be played with: 
 
-(photo issue-rider not syncing)
+![Layout1](Media/Iteration1/yourturn.png)
 
 I made 3 “levels”, for the 2nd layout you have to rotate objects around:
 
-(photo issue-rider not syncing)
+![Layout1](Media/Iteration1/layout2.png)
 
 And I tried to make the 3rd level even harder:
 
-(photo issue-rider not syncing)
+![Layout1](Media/Iteration1/layout3.png)
 
 For layout 1 and 2 I put 60 seconds to complete it and 40 seconds for the 3rd layout. 
 
