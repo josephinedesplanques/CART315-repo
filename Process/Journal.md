@@ -203,7 +203,7 @@ New rules and winning conditions will be added.
 
 Now you’re in, you can access the computer desktop.
 
-Inspiration: Pippin Barr’s It is as if you were doing work(link)
+Inspiration: Pippin Barr’s *It is as if you were doing work* ([link](https://pippinbarr.com/itisasifyouweredoingwork/info/))
 
 <img src="Media/IterativeProto2/PippinInspo.png" width="400" height="400"/>
 
