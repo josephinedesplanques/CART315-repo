@@ -1,3 +1,256 @@
+# Iterative Prototype 2 - 12.03.26
+
+During last class, me and Jolene decided to work on the project together.
+
+We liked the idea of a puzzle game, keeping something along the line of my idea (see Iterative Proto1).
+ 
+**Things we want to have:**
+
+- a storyline: even if simple (parent catches you etc)
+- Use of audio cues
+- Pixel Art
+- Add dialog/Thought bubbles
+- We like the idea of someone catching you/some urgency
+
+We brainstormed ideas for environments the puzzles could be in:
+
+- school desk
+- Computer desktop/phone screen
+- architect desk (you play with maps)
+- doctor operation table  
+- robbing a bank
+- cooking/kitchen (fridge)
+- wardrobe
+- computer wiring
+- suitcase 
+
+We made a **shortlist** of 3 environments that seemed like they had the most potential for diversity in mini games:
+
+- School Desk
+- Computer Desktop
+- Wardrobe
+
+For the following week, we decided to separately brainstorm mini-games ideas for all 3 environments and decide and which ones inspired us most/
+
+
+## MEETING MARCH 5TH
+
+**My brainstorm for meeting 1:**
+
+School Desk:
+
+- rearranging the desk (like in my iterative prototype 1)
+- Sorting items in a pencil case by color
+- sorting pencils by size
+- drawing in a notebook
+
+Computer Desktop/phone:
+
+- playing pong on computer and when you win you get a code
+- sorting your desktop
+- something to do with the photos app? You have to find something
+→ anything email/text/photo related will require a lot of writing/photo
+
+Wardrobe:
+
+- sorting shirts by color
+- pairing socks together
+- sorting shoes by size
+- finding the “odd” object and removing it (finding the hawaiian shirt in middle of regular dress shirts)
+→ scared it is going to be too much art/drawing to do
+
+
+**Jolene’s Brainstorm:**
+
+School Desk:
+
+- It's detention you want to get out.
+- Rewrite the words on the paper
+- Fix the time based off this riddle
+- you see a clock and you’re trying to set it up to fix the time
+- write graffiti on the desk 
+ 
+Computer Desk/Phone:
+
+- Build a computer ? (all components are layed out you have to put the in the right place)
+- once its built set up the monitor there's different wires you have to connect to set it up
+- turn it on, a mini game that looks like the terminal (not sure what’d it look like) pong game 
+
+Wardrobe:
+
+- It’s late at night and you’re trying to sneak out of your parent’s home to go to a party.
+- Fix the lightbulb – what if we show the action before it happens so we see a light bulb fall, then in the corner at the bottom there’s a box of lightbulbs, so the player has to screw it back on. there’s a dead lightbulb you have.
+- Pick an outfit
+- Grab your shoes
+
+We decided to go for the **Computer Desktop environment**
+
+We thought it was the one that appealed to us the most.
+
+For the following week we distributed the tasks like this:
+
+**Jo:**
+- write a more detailed game pitch 
+- Find sounds (error, correct, footsteps, storm)
+- Start working on the icons (red cross, green check)
+
+
+**Jolene:**
+- Sketches
+- Create the monitor and the wires 
+- Program the drag and drop functionality, Correct/Err functionality. 
+
+
+Jolene: Implementation
+Josephine: Role
+Both: Look and feel.
+
+
+For the sounds: 
+I found a storm ambiance sound but was not convinced by the footsteps sounds I found. We might have to 
+
+
+Here is our game pitch:
+
+
+## SHORT GAME DESIGN DOC
+
+**Game Pitch:**
+
+You are working an office job. While your boss was on vacation, you heard that a round of layoffs was going to happen and decided to find out who was going to be fired. To do so, you sneaked in their office and snooped around on the computer. You were not careful and spilled coffee all over it, making it unusable. Your boss is coming back to work at 7am tomorrow. You now have to sneak into the office at night and fix the computer in order to have a shot at accessing the file. By solving puzzles, you can find the code to the confidential folder and let your friends know their fate. 
+
+**Main Mechanics:**
+
+- Multiple mini-games (puzzle inspired) to fix the computer, and then to get the code to access the confidential folder.
+- paying attention to audio cues (security guard walking around, opening door) and pressing a button to hide under the table when security walks in
+
+**Gameplay loops:**
+
+- Macro: fix the computer and solve all the puzzles to get the access code to the file and let your friends know they are on the layoff list.
+
+- Mid: solve a puzzle while paying attention to the audio cues in order to not get caught by the security guard
+
+- Micro: solve puzzle with click or drag and drop mechanics
+
+
+**Gameover condition:** security walks in and you were not fast enough to hide.
+
+**Precedents:**
+
+Stress about getting caught feeling: Hello Neighbor
+
+Some of the casual puzzle games: A little to the left
+
+Environment feel:
+
+office space, The Stanley Parable inspiration
+
+<img src="Media/IterativeProto2/officespace.jpg" width="400" height="400"/>
+
+It’s night, with storm outside
+
+**Sound ambiance:**
+
+The audio is what creates this feeling of anxiety.
+You hear the storm outside. You hear the footsteps of the security guard patrolling in the office.
+When you hide from the security guard, you hear the sound of the door opening.
+
+
+## Different mini games:
+
+**First mini game: Fixing the computer wires**
+
+<img src="Media/IterativeProto2/amongus.png" width="400" height="400"/>
+
+Inspiration: Among Us wire task
+
+Jolene’s sketches:
+
+<img src="Media/IterativeProto2/sketch1.png" width="400" height="400"/>
+<img src="Media/IterativeProto2/sketch2.png" width="400" height="400"/>
+
+There are 4 wires and you try to connect them to the right end. 
+If you get it wrong, a RED CROSS appears on your screen with an “error” sound, you try again. 
+When you get it right, a GREEN CHECK appears + “correct” sound.
+
+<img src="Media/IterativeProto2/Greencheck.png" width="400" height="400"/>
+Green Check				
+
+<img src="Media/IterativeProto2/Errorsign.png" width="400" height="400"/>
+Error Sign 
+(Made by Josephine)
+
+This is the mini game Jolene worked on implementing this week. 
+This is what it looks like right now:
+
+![Correc](Media/IterativeProto2/gifcorrect.gif)
+![Wrong](Media/IterativeProto2/gifwrong.gif)
+
+For more details on her process, see her journal: [link](https://github.com/jbodika/CART-315/blob/main/Process/Journal.md#implementation)
+
+**Mini game 2: Breakout variation**
+
+Once the computer is fixed, you can finally enter the computer.
+To get the 1st digit of a 3 digit code, you have to beat a game 
+
+Idea:
+Using and improving Josephine’s Exploration Prototype 4: 
+![BreakOut](Media/giftest.gif)
+
+New rules and winning conditions will be added.
+
+**Mini game 3, cleaning up desktop:** 
+
+Now you’re in, you can access the computer desktop.
+
+Inspiration: Pippin Barr’s *It is as if you were doing work* ([link](https://pippinbarr.com/itisasifyouweredoingwork/info/))
+
+<img src="Media/IterativeProto2/PippinInspo.png" width="400" height="400"/>
+
+The desktop is a mess, you can’t access anything, you have to sort out files in the right folders.
+Once the desktop is clean, you get the 2nd digit.
+
+**Mini game 4, anti virus:** 
+
+Once you’ve finished cleaning the desktop, an ALERT sign appears, letting you know a virus is infecting the computer.
+
+To fight it back, you need to solve a puzzle.
+
+Inspo, mini metro game:
+
+<img src="Media/IterativeProto2/metroinspo.png" width="400" height="400"/>
+
+Once the puzzle is solved, you get the final digit.
+
+
+**Acquiring the layoff file**
+
+Once you have the code, you can click on the confidential folder, put in the code, and click on the file.
+
+You then get an epilogue, with some text explaining how you managed to leave the office, email the file to your colleagues and have them all feel very grateful and organize a riot in the office the following day in protest of the layoffs. The End.
+
+
+**Hiding under the desk mechanic:**
+
+You hear the security guard’s footsteps. When you hear him really close, it’s time to hide under the desk.
+To do so, you have to press the key “H”.
+
+The screen will turn to black and you will hear the sound of the door opening. Keep pressing the key until you hear the door close.
+
+If you fail at pressing H before the door opens or you stop pressing it while the door is open, it is game over.
+
+
+## NEXT STEPS:
+
+Now in class we will test out Jolene’s prototype more, make a list of the things to improve and our to do list for the following week.
+
+It seems likely that I will start working on polishing the Breakout variant, and we’ll start working on implementing the sounds.
+
+
+
+
+
+
 # Iterative Prototype 1 - 26.02.26
 
 ## **Ideation Workshop Prototype:**
