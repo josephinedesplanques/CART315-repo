@@ -1,3 +1,90 @@
+# Iterative Prototype 3 - 19.03.26
+Last week during class Jolene and I identified our priorities for the next few weeks.
+
+It seems like the most important thing is that our hiding mechanism works, our audio environment adds the tension we want it to add and has at least 2 mini games working.
+
+We made this list of things that need to be done:
+
+Priorities:
+- Finding and implementing sounds
+- hiding mechanism
+- add a number of the code 
+- sub-priority:
+- Draw the front of the monitor
+
+Finding sounds:
+- storm
+- footsteps
+- door opening
+- keys shaking
+- door closing
+
+
+How will the hiding mechanism be implemented?
+
+Sound is getting louder 
+
+Press H -> fade to black
+
+Stop pressing -> back to what you were doing
+
+if door opens and you’re not pressing H
+-> game over? or restart level 
+
+Our task distribution for this week looked like:
+
+Jo:
+- polish breakout variant
+- find the sounds
+- hiding mechanism
+
+Jolene:
+- Draw the front of the monitor
+- Add an arrow to go to back (to switch scenes)
+- error message ex “you cannot use the computer it’s still broken!”
+- refine the first game
+
+## WORK DONE
+
+Honestly, finding good sound effects was pretty hard, I’m not convinced by the ones I found but I had to keep moving.
+
+My job was to work on implementing the hiding mechanism.
+
+The prof’s suggestion of having the camera panning down to hide the user’s view or if you don’t press H the camera slowly goes back up was good, but since we’re still not sure of how our camera work is going to look like, I decided to keep it simple with the black out screen.
+
+I started with putting on paper everything I was going to need to implement to get an idea of the task ahead and how to start it
+
+<img src="Media/IterativeProto3/HidingMechanism.jpg" width="400" height="400"/>
+
+The implementation of the Hiding mechanism entailed a lot of bool variables keeping track of whether or not the door was open, the “H” key was pressed etc and a lot of “if” loops.
+
+Things I learned while implemented:
+- understanding the difference between **Awake()** and Start(), especially here because since I want the mechanism to exist during every mini game, I need to put the DontDestroyOnLoad in Awake()
+- using **Time.deltaTime** in Update() which is the completion of seconds since the last frame inside your code while you’re doing something. This allows to make sure that no matter what computer the project is opened on, the game runs at the same rate.
+
+I subtracted Time.deltaTime from a lot of my variables in Update(): the timer that tracks the door opening, the timer that tracks the steps etc
+
+This way we have a pretty good idea of what the hiding mechanism feels like:
+
+(insert video)
+
+Things that need iteration/improvement:
+- right now, it’s GAME OVER if the player doesn’t press H in time or doesn’t hold it long enough, it feels too punitive. Should there be a 3lives system? Should you have to restart from the start?
+- you can only press H and “hide” after the door has started opening, maybe you should be able to do it before to get familiarized with how it works?
+- Same thing, once the door closes the H is released automatically, maybe better if you can just keep pressing a little longer?
+- Need to fix that once game over screen is on, the walking sound effects stop
+- Need to improve the spatialization of the sounds
+
+
+To see what Jolene worked on, see her journal ([link](https://github.com/jbodika/CART-315/blob/main/Process/Journal.md#iterative-prototype-ii-022626---021226))
+
+## Next Steps
+
+This week I didn’t have the time to work on the BreakOut changes, so that’s priority for next week.
+We also need to find the final sounds: storm, correct and wrong
+
+
+
 # Iterative Prototype 2 - 12.03.26
 
 During last class, me and Jolene decided to work on the project together.
@@ -183,7 +270,7 @@ Error Sign
 This is the mini game Jolene worked on implementing this week. 
 This is what it looks like right now:
 
-![Correc](Media/IterativeProto2/gifcorrect.gif)
+![Correct](Media/IterativeProto2/gifcorrect.gif)
 ![Wrong](Media/IterativeProto2/gifwrong.gif)
 
 For more details on her process, see her journal: [link](https://github.com/jbodika/CART-315/blob/main/Process/Journal.md#implementation)
