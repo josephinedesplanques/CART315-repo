@@ -44,6 +44,13 @@ Jolene:
 - error message ex “you cannot use the computer it’s still broken!”
 - refine the first game
 
+
+Our design value: Explore the way audio can impact a player’s experience
+
+This week, the goal was really to test out the feel of the audio cues. How does it impact the player’s experience? How does it impact the completion of the mini game? How does it impact the flow of the game? Does it bring out the right amount of tension?
+Therefore, it was a a role and implementation prototype
+
+
 ## WORK DONE
 
 Honestly, finding good sound effects was pretty hard, I’m not convinced by the ones I found but I had to keep moving.
@@ -67,6 +74,12 @@ I subtracted Time.deltaTime from a lot of my variables in Update(): the timer th
 This way we have a pretty good idea of what the hiding mechanism feels like:
 
 [Hiding Mechanism Video](Media/IterativeProto3/soundexample.mp4)
+
+The fidelity of the sounds is high because they are real files I downloaded from pixabay. But the game itself is pretty low fidelity and needs a lot of polishing
+
+
+I think overall it makes the player feel the tension and adds some fun! Needs polishing, but the core is here
+
 
 Things that need iteration/improvement:
 - right now, it’s GAME OVER if the player doesn’t press H in time or doesn’t hold it long enough, it feels too punitive. Should there be a 3lives system? Should you have to restart from the start?
