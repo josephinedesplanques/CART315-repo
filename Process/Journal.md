@@ -66,7 +66,7 @@ I subtracted Time.deltaTime from a lot of my variables in Update(): the timer th
 
 This way we have a pretty good idea of what the hiding mechanism feels like:
 
-(insert video)
+[Hiding Mechanism Video](Media/IterativeProto3/soundexample.mp4)
 
 Things that need iteration/improvement:
 - right now, it’s GAME OVER if the player doesn’t press H in time or doesn’t hold it long enough, it feels too punitive. Should there be a 3lives system? Should you have to restart from the start?
