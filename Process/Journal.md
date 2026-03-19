@@ -45,7 +45,7 @@ Jolene:
 - refine the first game
 
 
-Our design value: Explore the way audio can impact a player’s experience
+Our **design value**: Explore the way audio can impact a player’s experience
 
 This week, the goal was really to test out the feel of the audio cues. How does it impact the player’s experience? How does it impact the completion of the mini game? How does it impact the flow of the game? Does it bring out the right amount of tension?
 Therefore, it was a a role and implementation prototype
