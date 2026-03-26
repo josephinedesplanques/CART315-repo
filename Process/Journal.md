@@ -4,6 +4,64 @@
 
 Last week, we showed our prototype to a few people and the main feedback we got was regarding the sound design. At of now, the sound is confusing because it sounds like the security guard is very close to the player, already in the room. This makes the player want to hide (press H) all the time, when we, the designers, would like the player to understand that the danger is only present when they hear the "door opening" sound.
 
+So we know, as designers, that a big thing to focus on is our sound design, because it is the core of our gameplay.
+
+## To do for following week
+Me and Jolene came with this list of things to do:
+
+**THINGS TO DO:**
+
+Both:
+
+we NEED
+- storm sound
+- correct/wrong sounds
+
+
+Josephine:
+- you can press H whenever you want
+- its not game over if you stop pressing when door is closing
+- work on spatial aspect
+- implement storm 
+- fix game over screen (thunder + police sirens)
+- implement wrong/right sound in mini game1
+
+
+Jolene:
+Finish polishing game 1:
+- replayability
+- add environment
+- maybe sound for moving the computer
+
+## My Progress
+
+I started with fixing the game over screen.
+I wanted the footsteps sound, as well as the hiding mechanism to not be possible on that scene. But in my SecurityOffcier script in the mini game 1 scene, I put DontDestroyOnLoad because I want those sounds and mechanics to be in every mini game.
+Therefore, in my gameover scene script, I need to put:
+
+```csharp
+
+SecurityOfficer officer = FindFirstObjectByType<SecurityOfficer>();
+if (officer != null) Destroy(officer.gameObject);
+
+```
+
+I also added police sirens sounds, and chose a new thunder sound that had a lot more thunderstruck.
+
+In the Mini Game1 itself, I implemented the "correct" and "wrong" sounds and added the background storm sound. It still feels a little messy I'm having trouble with the mixing of all the sounds, the different volumes etc. Will need work.
+
+Then, I was supposed to work on fixing the hiding mechanism.
+And I didn't!
+Very busy week, and exam on 2011-2014 Egypt Thursday morning, I'll spare the details.
+
+Jolene was also caught up in other things, we're gonna have to make up for it this following week!
+
+It seems like realistically:
+- our core mechanism is here, it needs polishing, but it works, which is good news
+- 2nd mini game shouldn't take too much time to implement, since we're using of of my breakout iterations. (I'm fully jinxing it right now)
+- the third mini game has to be created from scratch, but we will keep it simple/
+
+So it's not all bad, we're going to have something nice in the end.
 
 
 # Iterative Prototype 3 - 19.03.26
@@ -73,7 +131,7 @@ I started with putting on paper everything I was going to need to implement to g
 
 The implementation of the Hiding mechanism entailed a lot of bool variables keeping track of whether or not the door was open, the “H” key was pressed etc and a lot of “if” loops.
 
-Things I learned while implemented:
+Things I learned while implementing:
 - understanding the difference between **Awake()** and Start(), especially here because since I want the mechanism to exist during every mini game, I need to put the DontDestroyOnLoad in Awake()
 - using **Time.deltaTime** in Update() which is the completion of seconds since the last frame inside your code while you’re doing something. This allows to make sure that no matter what computer the project is opened on, the game runs at the same rate.
 
