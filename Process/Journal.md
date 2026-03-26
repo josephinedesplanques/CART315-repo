@@ -1,3 +1,11 @@
+# Iterative Prototype 4 - 26.03.26
+
+## Playtest feedback from last week:
+
+Last week, we showed our prototype to a few people and the main feedback we got was regarding the sound design. At of now, the sound is confusing because it sounds like the security guard is very close to the player, already in the room. This makes the player want to hide (press H) all the time, when we, the designers, would like the player to understand that the danger is only present when they hear the "door opening" sound.
+
+
+
 # Iterative Prototype 3 - 19.03.26
 Last week during class Jolene and I identified our priorities for the next few weeks.
 
