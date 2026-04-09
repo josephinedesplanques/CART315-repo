@@ -1,3 +1,29 @@
+# Iterative Prototype 6 - 08.04.26
+
+A week before showing our game in class, a lot to do!
+
+We started the week with a meeting on Monday to work on finally finishing the first mini game and finishing implementing the Breakout mini game.
+
+Jolene was focused on MiniGame1, I was on the breakout.
+
+I had already imported the project’s Unity assets package, I just had to add the desk sprites to make it look like the game was on the computer.
+
+
+This is where things went wrong. For some reason, that I can not explain (definitely end of semester brain fog), I spent 3 hours trying to make the breakout bricks and ball and paddle smaller one at a time, manually, instead of SIMPLY making the computer screen sprite bigger. This took 3 hours because I did it manually and when it came to making the ball smaller, I changed something in the inspector or in the script I still don’t know and the ball stopped bouncing. So I then tried everything to fix the script.
+
+
+After 3 hours, we were panicking because neither Jolene nor I could find a solution and we knew we were not going to be able to work on our game the next day, so we made the decision to fully drop the hope of creating the 3rd mini game. This way we can focus on the 2 mini games we have.
+
+
+On Wednesday, I came back to the game and deleted all the breakout things, redownloaded the unity assets and realized I simply had to make the computer sprite bigger. I honestly can’t believe I spent 3 hours on it for nothing on Wednesday. I did jinx it in my Journal entry 2 weeks ago when I saw Breakout was going to be easy to implement. MOVING ON!
+
+
+The Breakout is now finally implemented, the main issue that arises is: when you “hide”, you need the game to freeze perhaps? like if you pressed “pause”. That’s something Jolene worked on. She also worked on the scene transitions.
+
+We fixed a few of the errors and made sure everything runs smoothly.
+We are definitely curious about how people are going to feel aout the game. We have a lot of doubts about a few things and playtest and feedback is going to be valuable and help us see things we haven't noticed.
+
+
 
 # Iterative Prototype 5 - 02.04.26
 
@@ -18,7 +44,7 @@ In the code, I honestly was getting lost in all the different variables I had cr
 
 I am pretty sure there is a simpler way to do what I did but I couldn't figure it out
 
-<img src="Media/.jpg" width="400" height="400"/>
+<img src="Media/variableslist.png" width="400" height="400"/>
 
 Now it was time to finish polishing the BreakOut Game.
 
