@@ -1,3 +1,120 @@
+
+# Iterative Prototype 5 - 02.04.26
+
+(sorry for the late submission!)
+
+This week, a bit of everything needed to happen.
+
+First of all: finishing polishing the first mini game. See Jolene’s journal.
+
+Second: fixing the hiding mechanism. That’s me!
+
+## HIDING MECHANISM
+The way it was set up previously prevented the player from “hiding” until the “door opening” sound started and next it would automatically stop the hiding when the “door closing” sound ended.
+
+We thought about it and ended up deciding that it was more interesting if the player was able to press “H” and hide whenever they wanted.
+
+In the code, I honestly was getting lost in all the different variables I had created to keep track of the walking sounds and the door opening mechanism etc.
+
+I am pretty sure there is a simpler way to do what I did but I couldn't figure it out
+
+<img src="Media/.jpg" width="400" height="400"/>
+
+Now it was time to finish polishing the BreakOut Game.
+
+## BREAKOUT GAME
+
+Because of a lack of time, we decided to not add a special winning mechanism and simply make it so once every brick is destroyed, the game is won. The challenge once again lies more in not getting caught by the security guard rather than on completing a complicated mini game.
+
+I was working on Breakout in a different project file so I had to download the asset packages and upload them in our game. I did so and everything seemed fine. But then I don’t know what happened and half of the scripts disappeared.
+For a few hours I tried to recover the scripts I had lost. Couldn't figure it out, ended up having to recreate all of them. The joys of Unity.
+
+So far this semester I had been pretty lucky and didn’t experience any big technical issues that led me to lose files and lose a lot of time, but it finally happened! 
+Once I thought I had it solved. I pushed it to Jolene. We then later realized that our game over screen disappeared? I also don’t know how it happened, and I had to redo it.
+
+After I finished redoing the GameOver screen, a new problem emerged….I was unable to hear any of the sounds! It drove me crazy for 2 hours. 
+
+**So, what did we learn?** 
+Always pay attention to what you’re deleting/duplicating. And be careful with how you name anything, to not end up deleting anything by accident :) Lesson learned.
+
+## Next up:
+It seems like we got overwhelmed with the amount of work in our other classes, which made us rethink what we had to deliver for next week.
+
+Our deliverable was: having a solid hiding mechanism with sound, and 3 playable mini games
+
+It seems like our goal is going to present 2 mini games for playtesting, and if we have the time, adding the third one for the following week.
+
+
+
+
+
+
+# Iterative Prototype 4 - 26.03.26
+
+## Playtest feedback from last week:
+
+Last week, we showed our prototype to a few people and the main feedback we got was regarding the sound design. At of now, the sound is confusing because it sounds like the security guard is very close to the player, already in the room. This makes the player want to hide (press H) all the time, when we, the designers, would like the player to understand that the danger is only present when they hear the "door opening" sound.
+
+So we know, as designers, that a big thing to focus on is our sound design, because it is the core of our gameplay.
+
+## To do for following week
+Me and Jolene came with this list of things to do:
+
+**THINGS TO DO:**
+
+Both:
+
+we NEED
+- storm sound
+- correct/wrong sounds
+
+
+Josephine:
+- you can press H whenever you want
+- its not game over if you stop pressing when door is closing
+- work on spatial aspect
+- implement storm 
+- fix game over screen (thunder + police sirens)
+- implement wrong/right sound in mini game1
+
+
+Jolene:
+Finish polishing game 1:
+- replayability
+- add environment
+- maybe sound for moving the computer
+
+## My Progress
+
+I started with fixing the game over screen.
+I wanted the footsteps sound, as well as the hiding mechanism to not be possible on that scene. But in my SecurityOffcier script in the mini game 1 scene, I put DontDestroyOnLoad because I want those sounds and mechanics to be in every mini game.
+Therefore, in my gameover scene script, I need to put:
+
+```csharp
+
+SecurityOfficer officer = FindFirstObjectByType<SecurityOfficer>();
+if (officer != null) Destroy(officer.gameObject);
+
+```
+
+I also added police sirens sounds, and chose a new thunder sound that had a lot more thunderstruck.
+
+In the Mini Game1 itself, I implemented the "correct" and "wrong" sounds and added the background storm sound. It still feels a little messy I'm having trouble with the mixing of all the sounds, the different volumes etc. Will need work.
+
+Then, I was supposed to work on fixing the hiding mechanism.
+And I didn't!
+Very busy week, and exam on 2011-2014 Egypt Thursday morning, I'll spare the details.
+
+Jolene was also caught up in other things, we're gonna have to make up for it this following week!
+
+It seems like realistically:
+- our core mechanism is here, it needs polishing, but it works, which is good news
+- 2nd mini game shouldn't take too much time to implement, since we're using of of my breakout iterations. (I'm fully jinxing it right now)
+- the third mini game has to be created from scratch, but we will keep it simple/
+
+So it's not all bad, we're going to have something nice in the end.
+
+
 # Iterative Prototype 3 - 19.03.26
 Last week during class Jolene and I identified our priorities for the next few weeks.
 
@@ -44,6 +161,13 @@ Jolene:
 - error message ex “you cannot use the computer it’s still broken!”
 - refine the first game
 
+
+Our **design value**: Explore the way audio can impact a player’s experience
+
+This week, the goal was really to test out the feel of the audio cues. How does it impact the player’s experience? How does it impact the completion of the mini game? How does it impact the flow of the game? Does it bring out the right amount of tension?
+Therefore, it was a a role and implementation prototype
+
+
 ## WORK DONE
 
 Honestly, finding good sound effects was pretty hard, I’m not convinced by the ones I found but I had to keep moving.
@@ -58,7 +182,7 @@ I started with putting on paper everything I was going to need to implement to g
 
 The implementation of the Hiding mechanism entailed a lot of bool variables keeping track of whether or not the door was open, the “H” key was pressed etc and a lot of “if” loops.
 
-Things I learned while implemented:
+Things I learned while implementing:
 - understanding the difference between **Awake()** and Start(), especially here because since I want the mechanism to exist during every mini game, I need to put the DontDestroyOnLoad in Awake()
 - using **Time.deltaTime** in Update() which is the completion of seconds since the last frame inside your code while you’re doing something. This allows to make sure that no matter what computer the project is opened on, the game runs at the same rate.
 
@@ -66,7 +190,13 @@ I subtracted Time.deltaTime from a lot of my variables in Update(): the timer th
 
 This way we have a pretty good idea of what the hiding mechanism feels like:
 
-(insert video)
+[Hiding Mechanism Video](Media/IterativeProto3/soundexample.mp4)
+
+The fidelity of the sounds is high because they are real files I downloaded from pixabay. But the game itself is pretty low fidelity and needs a lot of polishing
+
+
+I think overall it makes the player feel the tension and adds some fun! Needs polishing, but the core is here
+
 
 Things that need iteration/improvement:
 - right now, it’s GAME OVER if the player doesn’t press H in time or doesn’t hold it long enough, it feels too punitive. Should there be a 3lives system? Should you have to restart from the start?
