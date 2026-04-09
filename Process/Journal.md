@@ -61,12 +61,12 @@ Once I thought I had it solved. I pushed it to Jolene. We then later realized th
 After I finished redoing the GameOver screen, a new problem emerged….I was unable to hear any of the sounds! It drove me crazy for 2 hours. 
 
 **So, what did we learn?** 
-Always pay attention to what you’re deleting/duplicating. And be careful with how you name anything, to not end up deleting anything by accident :) Lesson learned.
+Always pay attention to what you’re deleting/duplicating. And be careful with how you name things, to not end up deleting anything by accident :) Lesson learned.
 
 ## Next up:
 It seems like we got overwhelmed with the amount of work in our other classes, which made us rethink what we had to deliver for next week.
 
-Our deliverable was: having a solid hiding mechanism with sound, and 3 playable mini games
+Our deliverable was: having a solid hiding mechanism with sound, and 3 playable mini games.
 
 It seems like our goal is going to present 2 mini games for playtesting, and if we have the time, adding the third one for the following week.
 
