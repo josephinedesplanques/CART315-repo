@@ -1,4 +1,4 @@
-# Iterative Prototype 6 - 09.04.26
+# Iterative Prototype 6, Final Iterative Prototype - 09.04.26
 
 A week before showing our game in class, a lot to do!
 
