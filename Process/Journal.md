@@ -20,9 +20,11 @@ On Wednesday, I came back to the game and deleted all the breakout things, redow
 
 The Breakout is now finally implemented, the main issue that arises is: when you “hide”, you need the game to freeze perhaps? like if you pressed “pause”. That’s something Jolene worked on. She also worked on the scene transitions.
 
-We fixed a few of the errors and made sure everything runs smoothly.
+We fixed a few of the errors and made sure everything runs smoothly enough.
+
 We are definitely curious about how people are going to feel aout the game. We have a lot of doubts about a few things and playtest and feedback is going to be valuable and help us see things we haven't noticed.
 
+This week definitely made me realize how even the smallest things can take forever, and how the learning curve this semester has been big but at least I feel like I will be way more efficient in my next projects.
 
 
 # Iterative Prototype 5 - 02.04.26
