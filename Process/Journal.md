@@ -1,3 +1,54 @@
+
+# Iterative Prototype 5 - 02.04.26
+
+(sorry for the late submission!)
+
+This week, a bit of everything needed to happen.
+
+First of all: finishing polishing the first mini game. See Jolene’s journal.
+
+Second: fixing the hiding mechanism. That’s me!
+
+## HIDING MECHANISM
+The way it was set up previously prevented the player from “hiding” until the “door opening” sound started and next it would automatically stop the hiding when the “door closing” sound ended.
+
+We thought about it and ended up deciding that it was more interesting if the player was able to press “H” and hide whenever they wanted.
+
+In the code, I honestly was getting lost in all the different variables I had created to keep track of the walking sounds and the door opening mechanism etc.
+
+I am pretty sure there is a simpler way to do what I did but I couldn't figure it out
+
+<img src="Media/.jpg" width="400" height="400"/>
+
+Now it was time to finish polishing the BreakOut Game.
+
+## BREAKOUT GAME
+
+Because of a lack of time, we decided to not add a special winning mechanism and simply make it so once every brick is destroyed, the game is won. The challenge once again lies more in not getting caught by the security guard rather than on completing a complicated mini game.
+
+I was working on Breakout in a different project file so I had to download the asset packages and upload them in our game. I did so and everything seemed fine. But then I don’t know what happened and half of the scripts disappeared.
+For a few hours I tried to recover the scripts I had lost. Couldn't figure it out, ended up having to recreate all of them. The joys of Unity.
+
+So far this semester I had been pretty lucky and didn’t experience any big technical issues that led me to lose files and lose a lot of time, but it finally happened! 
+Once I thought I had it solved. I pushed it to Jolene. We then later realized that our game over screen disappeared? I also don’t know how it happened, and I had to redo it.
+
+After I finished redoing the GameOver screen, a new problem emerged….I was unable to hear any of the sounds! It drove me crazy for 2 hours. 
+
+**So, what did we learn?** 
+Always pay attention to what you’re deleting/duplicating. And be careful with how you name anything, to not end up deleting anything by accident :) Lesson learned.
+
+## Next up:
+It seems like we got overwhelmed with the amount of work in our other classes, which made us rethink what we had to deliver for next week.
+
+Our deliverable was: having a solid hiding mechanism with sound, and 3 playable mini games
+
+It seems like our goal is going to present 2 mini games for playtesting, and if we have the time, adding the third one for the following week.
+
+
+
+
+
+
 # Iterative Prototype 4 - 26.03.26
 
 ## Playtest feedback from last week:
