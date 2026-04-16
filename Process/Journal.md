@@ -6,8 +6,8 @@ Overall, I am pretty happy with what Jolene and I managed to get done with our p
 
 We have 2 working mini games + the mechanism of the Security Guard walking and checking the room.
 
-We had issues with the executables so here is a link to our shared repo that has the project file on it to dowload. When playing, start in the scene MiniGame1.
-https://github.com/jbodika/CART-315-Prototype
+Here is a link to our shared repo that has the project file on it to dowload. When playing, start in the scene MiniGame1. We have an executable but it doesn't work great, so ideally it should be played in Unity editor.
+https://github.com/jbodika/CART-315-Prototype/tree/main
 
 
 It was my first real project in Unity, other than two 2D platformers.
