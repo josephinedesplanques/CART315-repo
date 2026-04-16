@@ -1,3 +1,45 @@
+# Final Reflection - 16.04.26
+
+## THE GAME
+
+Overall, I am pretty happy with what Jolene and I managed to get done with our project!
+
+We have 2 working mini games + the mechanism of the Security Guard walking and checking the room.
+
+We had issues with the executables so here is a link to our shared repo that has the project file on it to dowload. When playing, start in the scene MiniGame1.
+https://github.com/jbodika/CART-315-Prototype
+
+
+It was my first real project in Unity, other than two 2D platformers.
+
+I think that finding a core mechanism to build on top of was very good, and made sure we knew what our goal was and didn’t get lost in a bunch of random ideas.
+
+The whole process really highlighted for me the importance of clear communication and clear documentation to be sure everyone on a team is on the same page when it comes to the progress that was made and the tasks to be done. It was already hard and there were only 2 of us so I can’t even imagine what it’s like for big teams haha.
+
+And in terms of making a good game, it is clear that playtesting is the most important thing. It really allows the game devs to test the smallest changes that can have a big impact on the game feel.
+
+For our game to be improved, a lot of things need to be tested:
+- the amount of time between each time the door opens
+- the amount of time the door stays open for
+- how many wires the first mini game should have
+- etc
+
+These are things that have a tremendous impact on the game feel, and that need time to playtest and make changes to.
+
+
+## THE CLASS
+
+Coming into this class, I was nervous that I didn’t have the skills necessary to do well. It was my first “technical” class of the Game Design minor, and knowing that everyone else in the class was in CART I felt intimated. But the class atmosphere was great and I quickly realized that everyone’s skillset was very different and we all had stuff to learn! 
+I enjoyed the Unity-focused first few weeks, I wish I had come to class with more specific questions to ask, because some issues came up later on in Unity that I could have been more prepared to tackle.
+
+I really enjoyed playing everyone’s games and I loved how diverse the propositions were.
+
+I liked having to test ideas out every week, it enforced a pace that wasn’t too intense but still made sure things happened progressively.
+
+Overall, I really enjoyed this class, I learned a lot and feel ready to tackle more projects in Unity! 
+
+
+
 # Iterative Prototype 6, Final Iterative Prototype - 09.04.26
 
 A week before showing our game in class, a lot to do!
